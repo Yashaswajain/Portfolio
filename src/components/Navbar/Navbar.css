@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'); 
+.navbar{
+    width:100%;
+    background-color:white;
+    color:white;
+    height:60px;
+    position:fixed;
+    z-index:1;
+    top:0%;
+    left:0%;
+    font-family: 'Montserrat', sans-serif;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:black;
+    border-bottom: 1px solid rgb(0,0,0,.3);
+}
+.navbar .leftNavbar{
+    color:black;
+    height:inherit;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.navbar .leftNavbar>*{
+    font-size: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navbar .leftNavbar .whiteleftNavbar{
+    color:white;
+}
+.navbar .leftNavbar .pinkleftNavbar{
+    color:#c40866;
+}
+.navbar .leftNavbar .resume{
+    font-size: 1rem;
+    text-decoration: none;
+    color:white;
+    margin:0px 15px;
+    position:relative;
+    top:3px;
+    transition:all .5s;
+}
+.navbar .leftNavbar .resume:hover{
+    color:#c40866;
+}
+
+.navbar .listItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height:inherit;
+}
+.navbar .listItems li{
+    list-style-type:none;
+    margin:0px 30px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition:all .5s;
+    cursor:pointer;
+    height:inherit;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .listItems li a{
+    text-decoration: none;
+    color:white;
+    transition:all .5s;
+}
+.navbar .listItems li a:hover{
+    color:#c40866;
+}
+
+.navbar .hamburger,.hamburger2{
+    display:none;
+    color:#c40866;
+    background:none !important;
+    border:none;
+    cursor:pointer;
+    position:relative;
+    top:4px;
+    transition:all 1s ease-in-out;
+    margin:0px 20px;
+}
+
+.navbar .hiddenOptions {
+    display:flex;
+    flex-direction: row;
+    align-items: center ;
+    justify-content:space-around;
+    height:60px;
+    position:fixed;
+    top:60px;
+    background-color:black;
+    width:100%;
+    display:none;
+}
+
+.navbar .hiddenOptions a{
+    text-decoration: none;
+    color:white;
+}
+.navbar .hiddenOptions a:hover{ 
+    color:#c40866
+}
+
+@media screen and (max-width:830px){
+    .navbar .leftNavbar{
+        margin-left: 30px;
+    }
+    .navbar .hamburger{
+        display:block;
+        margin:0px 20px;
+    }
+    
+    .navbar .listItems{
+        display:none;
+    }
+    .navbar .leftNavbar .resume{
+        font-size:.6rem;
+    }
+
+}

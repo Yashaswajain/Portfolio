@@ -1,0 +1,120 @@
+.about{
+    overflow: hidden;
+    background:url(https://user-images.githubusercontent.com/24233321/74650784-71927280-51a8-11ea-8ce8-5eb41e225960.png);
+}
+.about>*{
+    cursor: pointer;
+    transition:all .5s;
+    position:relative;
+}
+.about>*:hover{
+    transform: scale(180%)
+}
+#c{
+    top:170px;
+    left:140px;
+    width:50px;
+    height:50px;
+}
+#cpp{
+    top:130px;
+    
+    width:50px;
+    height:50px;
+    
+}
+#html{
+    left:180px;
+    top:470px;
+    width:60px;
+    height:60px;
+}
+#css{
+    left:270px;
+    top:500px;
+    width:60px;
+    height:60px;
+}
+#js{
+    
+    top:470px;
+    width:50px;
+    height:50px;
+}
+#react{
+    top:480px;
+    left:100px;
+    width:80px;
+}
+#github{
+    top:280px;
+    left:130px;
+    width:80px;
+    height:70px;
+}
+#photoshop{
+    top:20px;
+    left:780px;
+    width:80px;
+    top:450px;
+}
+#mysql{
+    width:60px;
+    height:60px;
+    left:965px;
+    top:15px;
+}
+#inkscape{
+    width:60px;
+    height:60px;
+    left:550px;
+    top:170px;
+}
+#express{
+    width:60px;
+    height:60px;
+    left:620px;
+    top:430px;
+}
+#node{
+    width:100px;
+    height:60px;
+    top:260px;
+    right:30px;
+}
+#sql{
+    width:60px;
+    height:60px;
+    left:70px;
+    top:130px;
+}
+#mongo{
+    width:70px;
+    height:70px;
+    right:470px;
+    top:20px;
+}
+
+
+
+
+
+@media screen and (max-width:720px){
+    .about{
+        background-size: contain;
+        display:flex;
+        flex-direction:row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .about>*{
+        transform: scale(90%);
+        position:static;
+        margin:0px 30px;
+    }
+    .about>*:hover{
+        transform: scale(130%)
+    }
+}
+

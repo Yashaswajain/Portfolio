@@ -1,0 +1,18 @@
+.App{
+    height:100vh;
+}
+.App .parts{
+    width:100%;
+    height:calc(100vh - 60px);
+    position:absolute;
+    top:60px;
+    left:0%;
+    background-color:white;
+    scroll-snap-type:y mandatory;
+}
+
+.App .parts>*{
+    height:calc(100vh - 60px);
+    width: 100%;
+    scroll-snap-align:start;
+}

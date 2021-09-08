@@ -1,0 +1,140 @@
+.work{
+    background-color:white;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center ;
+    justify-content:space-between;
+}
+.work .switchButtons{
+    margin-top:20px;
+    width:70%;
+    display:flex;
+    flex-direction: row;
+    align-items: center ;
+    justify-content:space-evenly;
+    height:10%;
+}
+.work .switchButtons .projects{
+    border-color:blue;
+}
+.work .switchButtons>*{
+    background:none;
+    border:none;
+    border-bottom:2px solid #c40866;
+    transition:all .5s;
+    overflow: hidden;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    height:100%;
+    width:33%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 400;
+    outline:none;
+}
+.work .switchButtons>*:hover{
+    background-color: #c40866;
+    color:white;
+}
+
+.work .logoContainer{
+    width:100%;
+    height:80%;
+    display:none;
+}
+.work .tsContainer,.logoContainer{
+    width:100%;
+    height:80%;
+    overflow: hidden;
+    margin-bottom:15px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: center;
+    display:none;
+    text-align: center;
+}
+
+.work .tsContainer >*{
+    width:240px;
+    height:220px;
+    transition:all .5s;
+    cursor: pointer;
+    overflow: hidden;
+    margin:0px 50px;
+}
+.work .tsContainer >*:hover{
+transform: scale(120%);
+}
+.work .logoContainer>*{
+    width:210px;
+    height:180px;
+    transition:all .5s;
+    cursor: pointer;
+    overflow: hidden;
+    margin:20px 70px;
+}
+.work .logoContainer>*:hover{
+    transform:scale(120%)
+}
+.work .projectContainer{
+    width:100%;
+    height:85%;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+}
+.work .projectContainer .upper{
+    height:80%;
+    margin:10px 0px;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    align-items: center ;
+    justify-content:space-around;
+}
+
+@media screen and (max-width:720px){
+    .work .switchButtons{
+        width:90%;
+    }
+    .work .switchButtons>*{
+        font-size: 1rem;
+    }
+    .work .logoContainer{
+        flex-direction:row;
+        flex-wrap: wrap;
+    }
+    .work .logoContainer>*{
+        width:25%;
+        height:16%;
+        margin:10% 40px;
+    }
+    .work .logoContainer>*:hover{
+        transform: scale(180%);
+    }
+    .work .tsContainer{
+        flex-direction:row;
+        flex-wrap: wrap;
+    }
+    .work .tsContainer>*{
+        width:25%;
+        height:16%;
+        margin:10% 40px;
+    }
+    .work .tsContainer>*:hover{
+        transform: scale(200%);
+    }
+    .work .projectContainer{
+        height:100%;
+        overflow: hidden;
+    }
+    .work .projectContainer .upper{
+     flex-direction:column;
+     overflow: hidden;
+     height:100%;
+    }
+}
+

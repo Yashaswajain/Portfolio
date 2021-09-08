@@ -1,0 +1,85 @@
+.projectCard{
+    width:25%;
+    height:70%;
+    margin:0px 20px;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow:1px 1px 4px black;
+    transition:all .5s;
+    background-size: cover;
+    background-position: center;
+}
+.projectCard .lowerCard{
+font-family: 'Montserrat', sans-serif;
+width:100%;
+height:100%;
+display:flex;
+flex-direction:column;
+align-items: center ;
+justify-content:space-around;
+transition: all .5s;
+border-radius: 5px;
+overflow: hidden;
+}
+.projectCard .lowerCard h2{
+    margin:10px 5px;
+    font-size: 2rem;
+    overflow:hidden;
+}
+.projectCard .lowerCard div{
+    width:100%;
+    height:30%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.projectCard .lowerCard div a{
+    text-decoration: none;
+    padding:10px;
+    border:2px solid #c40866;
+    color:black;
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: all .5s;
+}
+.projectCard .lowerCard div a:hover{
+background-color: black;
+color:white;
+border-color:black;
+}
+
+.projectCard:hover{
+    .lowerCard{
+        display:flex;
+        background-color:rgba(0,0,0,.4);
+        
+    }
+}
+
+
+
+@media screen and (max-width:720px){
+    .projectCard{
+        width:60%;
+        border-radius: 5px;
+        margin:15px 0px;
+    }
+    .projectCard:hover{
+        transform: scale(110%)
+    }
+    .projectCard .lowerCard h2{
+       font-size: 1.1rem;
+    }
+    .projectCard .lowerCard div{
+        margin:4px 0px;
+    }
+    .projectCard .lowerCard div a{
+        font-size: .8rem;
+        padding:5px;
+        border-width: 1px;
+    }
+}
+
